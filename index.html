@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katta Ovozli Kalkulyator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-700 to-blue-500">
+
+  <div class="w-80 bg-white rounded-2xl shadow-2xl p-6 font-sans">
+    <div class="bg-gray-100 border border-gray-300 rounded-md h-16 flex items-center justify-end px-4 mb-6">
+      <span class="text-2xl font-semibold text-gray-800" id="display">0</span>
+    </div>
+
+    <div class="grid grid-cols-4 gap-4">
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn operator">+</button>
+
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="btn operator">-</button>
+
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn operator">*</button>
+
+      <button class="btn bg-red-500 text-white hover:bg-red-600" id="clear">C</button>
+      <button class="btn">0</button>
+      <button class="btn bg-green-500 text-white hover:bg-green-600" id="equals">=</button>
+      <button class="btn operator">/</button>
+    </div>
+  </div>
+  <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+  <script src="./calc.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
